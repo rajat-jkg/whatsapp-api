@@ -1,0 +1,14 @@
+button{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px;
+    background-color: rgb(138, 247, 138);
+    padding: 4px;
+    border: double rgb(78, 204, 78) 2px;
+    border-radius: 4px;
+    max-width: 80%;
+}
+div{
+    border: double rgb(78, 204, 78) 5px;
+
+}
