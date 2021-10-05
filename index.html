@@ -13,37 +13,43 @@
     
 </head>
 <body style="text-align: center; padding: 0px; margin: 0px;">
+    
     <div id="Menu">
+        <header>
+            <h1>WhatsApp API</h1>
+            <h4>Send messages to unsaved numbers and much more</h4>
+        </header>
         <h1>Select an option</h1>
-        <button >Send a message to an unsaved number</button><br>
-        <button>Type and send a message to an unsaved number</button><br>
-        <button>Type and send a message to multipe people</button><br>
+        <button onclick="select(1)">Send a message to an unsaved number</button><br>
+        <button onclick="select(2)">Type and send a message to an unsaved number</button><br>
+        <button onclick="select(3)">Type and send a message to multipe people</button><br>
     </div>
-    <div id="-1">
+    <div id="-1" style="display: none;">
         <h2>Enter the phone number</h2>
-        +<input type="text" style="width: 20px;"><input type="text" /><BR>
-        <button>Generate button</button>
+        +<input type="text" style="width: 20px;" id="cc1"><input type="text" id="phone1"><BR>
+        <button onclick="generate1()">Generate send button</button>
         <br>
-        <button>Send</button>
-        <img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px">
+        <a id="send1" href="#"><button id="but1"  style="display: none;">Send<img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px"></button></a>
+        <h4>Refresh to go back to previous menu</h4>
     </div>
-    <div id="-2">
+    <div id="-2" style="display: none;">
         <h2>Enter the phone number</h2>
-        +<input type="text" style="width: 20px;"><input type="text" /><BR>
+        +<input type="text" style="width: 20px;" id="cc2"><input type="text" id="phone2" /><BR>
         <h2>Enter the message</h2>
-        <input type="text"  style="width:auto; min-width: 80% ;"><br />
-        <button>Generate button</button>
+        <input type="text"  style="width:auto; min-width: 80% ;" id="message2"><br />
+        <button onclick="generate2()">Generate send button</button>
         <br>
-        <button>Send</button>
-        <img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px">
+        <a href="http://#" id="send2"><button style="display: none;" id='but2'>Send <img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px"></button></a>
+        
+        <h4>Refresh to go back to previous menu</h4>
     </div>
-    <div id="-3">
+    <div id="-3" style="display: none;">
         <h2>Enter the message</h2>
-        <input type="text"  style="width:auto; min-width: 80% ;"><br />
-        <button>Generate button</button>
+        <input type="text" style="width:auto; min-width: 80% ;" id="message3"><br />
+        <button onclick="generate3()">Generate send button</button>
         <br>
-        <button>Send</button>
-        <img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px">
+        <a href="http://#" id="send3"><button id="but3" style="display: none;">Send<img src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt="WhatsApp send link" width="20px"></button></a>
+        <h4>Refresh to go back to previous menu</h4>
     </div>
 </body>
 </html>
